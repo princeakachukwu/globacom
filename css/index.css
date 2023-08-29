@@ -1,0 +1,663 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.topNav {
+  height: 6vh;
+  background-color: rgb(75, 180, 78);
+  /* display: flex; */
+  justify-content: space-around;
+  display: none;
+}
+
+.top {
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top .top1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+  margin: 0px;
+}
+
+.top .top1 :nth-child(2) {
+  background-color: rgb(75, 180, 78);
+  color: white;
+}
+
+.top .top1 a {
+  /* padding: 10px; */
+  margin: 0px;
+  background-color: white;
+  height: 100%;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: green;
+}
+
+.top .top2 {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.top .top2 a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.top .top3 {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+}
+
+.top .top3 figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  margin: 0px;
+  color: white;
+  padding: 0px 10px;
+}
+
+.top .top3 .button {
+  background-color: white;
+  border-radius: 10px;
+  width: 80px;
+}
+
+/* This is the styling for large screen */
+
+@media (min-width: 768px) {
+  .topNav {
+    display: flex;
+  }
+}
+
+/* This is where i started styling my midNav */
+
+.midNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.midContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.midContent .gloLogo {
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.midContent .search {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  margin: 0px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.midContent .search .flag {
+  border-radius: 10px;
+  border: 1px solid grey;
+  height: 50%;
+}
+
+/* This is the styling for midNav for large screen */
+
+@media (min-width: 768px) {
+  .midNav {
+    display: none;
+  }
+}
+
+.midNav2 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .midNav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .nav2Content {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .nav2Content .gloLogo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    width: 40%;
+    height: 100%;
+  }
+
+  .nav2Content .nav2Links {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .drop {
+    height: 80px;
+    display: flex;
+    position: relative;
+  }
+
+  .drop .dropDown {
+    position: absolute;
+    top: 80px;
+    right: -395px;
+    width: 50vw;
+    height: 70vh;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    z-index: 10;
+  }
+
+  .drop .dropDown .dropdownContent {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .drop .dropDown .dropdownContent .bigImage {
+    height: 100%;
+    width: 45%;
+    background-color: rgb(rgb(180, 102, 102, 0.5), rgb(46, 92, 46, 0.7));
+    background-image: url("../images/data.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+
+  .drop .dropDown .dropdownContent .contentLinks {
+    background-color: white;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .drop .dropDown .dropdownContent .contentLinks a {
+    text-decoration: none;
+    padding: 5px 0px;
+    min-width: 200px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid grey;
+    margin-top: 30px;
+  }
+
+  .contentLinks a:hover {
+    color: green;
+  }
+  .nav2Content
+    .nav2Links
+    .drop
+    .dropDown
+    .dropdownContent
+    .contentLinks
+    a:hover {
+    color: green;
+  }
+
+  .drop:hover {
+    border-bottom: 3px solid green;
+  }
+
+  .drop:hover .dropDown {
+    display: flex;
+    color: green;
+  }
+
+  .nav2Content .nav2Links a {
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0px 10px;
+  }
+
+  .bigImage1 {
+    height: 100%;
+    width: 45%;
+    background-color: rgb(rgb(180, 102, 102, 0.5), rgb(46, 92, 46, 0.7));
+    background-image: url("../images/device.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+
+  .line:hover {
+    height: 80px;
+    border: none;
+    border-bottom: 3px solid green;
+  }
+}
+
+/* note: I did not do any external styling for the carouser. Every styling was done inline.
+This is where i started the styling for the form. */
+
+.recharge {
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  /* margin: 0px 20px; */
+}
+
+.recharge h1 {
+  color: white;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  height: 50px;
+}
+
+.recharge button {
+  display: inline;
+  background-color: rgb(75, 180, 78);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  width: 180px;
+  border: none;
+  border-radius: 30px;
+  align-self: flex-start;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+/* This is the styling for .recharge on large screen */
+
+@media (min-width: 768px) {
+  main {
+    position: relative;
+  }
+
+  .recharge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    width: 70vw;
+    align-self: center;
+    padding: 10px;
+    gap: 10px;
+    position: absolute;
+    top: 550px;
+    right: 250px;
+  }
+
+  .recharge h1 {
+    font-size: 25px;
+  }
+
+  .form {
+    flex-direction: row;
+    width: 600px;
+    margin: 0px;
+    padding: 0px;
+    gap: 35px;
+  }
+
+  .form input {
+    height: 40px;
+  }
+
+  .recharge button {
+    margin: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+/* Here marks the begining of the styling for the section on quick services */
+
+.quick-services {
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-services .service-heading {
+  color: green;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.box {
+  display: flex;
+  width: 90vw;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  /* border: 2px solid grey; */
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  color: white;
+}
+
+.buy-data {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+    url("/images/quick-1.png");
+}
+
+.tarrif-plans {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+    url("/images/quick-2.png");
+}
+
+.borrow-data {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+    url("/images/quick-3.png");
+}
+
+.share-data {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+    url("/images/quick-4.png");
+}
+
+.glo-business {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+    url("/images/quick-5.png");
+}
+
+.gift-data {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+    url("/images/quick-6.png");
+}
+
+.entertainment {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+    url("/images/quick-7.png");
+}
+
+.grid-box {
+  display: none;
+}
+
+/* This is the begining of the styling for the section on quick services on large screen */
+
+@media (min-width: 768px) {
+  .quick-services {
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    gap: 30px;
+    padding: 100px 0px;
+    background-color: rgb(240, 240, 240);
+  }
+
+  .quick-services .service-heading {
+    font-weight: bolder;
+    color: rgb(75, 180, 78);
+  }
+
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    display: none;
+  }
+
+  .grid-box {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .item {
+    /* background-color: rgb(75, 180, 78); */
+    height: min(350px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    color: white;
+  }
+
+  .item:nth-of-type(1) {
+    grid-column: 1/2;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+      url("/images/quick-1.png");
+  }
+
+  .item:nth-of-type(2) {
+    grid-column: 2/3;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+      url("/images/quick-2.png");
+  }
+
+  .item:nth-of-type(3) {
+    grid-column: 3/4;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+      url("/images/quick-3.png");
+  }
+
+  .item:nth-of-type(4) {
+    /* background-color: yellow; */
+    grid-column: 1/3;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+      url("/images/quick-4.png");
+  }
+
+  .item:nth-of-type(5) {
+    /* background-color: red; */
+    grid-column: 3/4;
+    grid-row: 2/4;
+    height: 720px;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+      url("/images/quick-5.png");
+  }
+
+  .item:nth-of-type(6) {
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+      url("/images/quick-6.png");
+  }
+
+  .item:nth-of-type(7) {
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.7)),
+      url("/images/quick-7.png");
+  }
+
+  .buy-data {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .tarrif-plans {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .borrow-data {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .share-data {
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+
+  .gift-data {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .entertainment {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .glo-business {
+    grid-column: 3;
+    grid-row: 2;
+  }
+}
+/* 
+.glo-shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 90vw;
+  height: 80vw;
+  background: linear-gradient(to right, rgb(75, 180, 78), rgb(0, 105, 55));
+  text-align: center;
+  gap: 30px;
+}
+
+.glo-shop h1 {
+  font-weight: bolder;
+  font-size: 32px;
+}
+
+.glo-shop p {
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.glo-shop button {
+  width: 220px;
+  border: none;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+.half {
+  width: 90vw;
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: none;
+}
+
+.half-background {
+  width: 60%;
+  margin: 0px;
+  background-color: rgb(75, 180, 78);
+  -webkit-clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  padding: 40px;
+  gap: 20px;
+}
+ */
