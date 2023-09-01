@@ -220,7 +220,7 @@
   .drop .dropDown .dropdownContent .bigImage {
     height: 100%;
     width: 45%;
-    background-color: rgb(rgb(180, 102, 102, 0.5), rgb(46, 92, 46, 0.7));
+    /* background-color: rgb(rgb(180, 102, 102, 0.5), rgb(46, 92, 46, 0.7)); */
     background-image: url("../images/data.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -605,59 +605,269 @@ This is where i started the styling for the form. */
     grid-row: 2;
   }
 }
-/* 
-.glo-shop {
+
+.backClip {
+  height: 70vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clip {
+  height: 80%;
+  width: 100%;
+}
+
+.gloworld-shop{
+  -webkit-clip-path: polygon(0 0, 99% 0, 90% 100%, 0% 100%);
+clip-path: polygon(0 0, 99% 0, 90% 100%, 0% 100%);
+  width: 60%;
+  padding-left: 70px;
+  background: linear-gradient(45deg, rgb(70, 182, 72), rgb(2, 106, 56));
+  border-right: 10px solid red;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.gloworld-shop h1 {
+  color:white;
+  font-weight: bolder;
+}
+
+.gloworld-shop p{
+  color:white;
+  font-weight: bold;
+}
+
+.view-all {
+  background-color:white;
+  color:green;
+  padding: 10px 30px;
+  border:none;
+  border-radius:40px;
+}
+
+.findStore {
+  height: 30vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  
+}
+
+.findStore h2 {
+  color:rgb(75, 180, 78);
+  font-weight: bold;
+}
+
+.gloTV {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-image:url("/images/background-1.jpg")
+}
+
+.tv {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+.tv p {
+  color:white;
+}
+
+.tv button {
+  background-color:rgb(75, 180, 78);
+  color:white;
+  font-weight: bold;
+  padding: 10px 30px;
+  border:none;
+  border-radius:40px;
+}
+
+.latestNews {
+  display: flex;
+  gap: 30px;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  padding: 20px 0px;
+} 
+
+.news {
+  display: flex;
+  gap: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  width: 90vw;
-  height: 80vw;
-  background: linear-gradient(to right, rgb(75, 180, 78), rgb(0, 105, 55));
+  padding: 30px;
+}
+
+.news h2 {
+  color:rgb(75, 180, 78);
+  font-weight: bolder;
+}
+
+.news p {
+  color: grey;
   text-align: center;
-  gap: 30px;
 }
 
-.glo-shop h1 {
-  font-weight: bolder;
-  font-size: 32px;
+.gallery {
+  display:flex;
+  gap: 20px;
+  justify-content: center;
+  align-items:center;
 }
 
-.glo-shop p {
-  font-weight: bolder;
-  font-size: 15px;
+.galery-content {
+  height: 400px;
+  background-color:red;
+  position: relative;
+  border: 1px solid grey;
 }
 
-.glo-shop button {
-  width: 220px;
-  border: none;
-  padding: 10px;
-  border-radius: 40px;
+.galery-content:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ;
 }
 
-.half {
-  width: 90vw;
+.galery-content span {
+  height: 400px;
+  width: 100%;
+}
+
+.galery-content span img {
+  height: 100%;
+  width: 100%;
+}
+
+.date {
+  width: 100%;
+  height: 180px;
   background-color: white;
+  position: absolute;
+  top: 220px;
+  padding: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.date h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  text-overflow: clip;
+}
+
+.date h5 {
+  font-size: 15px;
+  color: grey;
+}
+
+.latestNews button {
+  background-color:rgb(75, 180, 78);
+  color:white;
+  font-weight: bold;
+  padding: 10px 30px;
+  border:none;
+  border-radius:40px;
+}
+
+.cafe {
+  height: 80vh;
+  background-image:url("/images/last-div.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  grid-template-columns: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 900px;
+  
+}
+
+.cafe h2 {
+  color: white;
+  font-weight: bolder;
+}
+
+.cafe p{
+  color: white;
+}
+
+.cafe figure {
+  display: flex;
+  gap: 10px;
+}
+
+.cafe figure img {
+  width: 150px;
+  height: 50px;
+}
+
+.footer {
+  height: 70vh;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first {
+  /* background-color: green; */
+  height: 70vh;
+  width: 80vw;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services {
+  /* background-color: yellow; */
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   margin: 0px;
   padding: 0px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  display: none;
 }
 
-.half-background {
-  width: 60%;
-  margin: 0px;
-  background-color: rgb(75, 180, 78);
-  -webkit-clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+.services .offering {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: flex-start;
-  padding: 40px;
-  gap: 20px;
+  flex: 1;
 }
- */
+
+.services .offering h3{
+  color: white;
+  display: flex;
+  font-size: 22px;
+}
+
+.services .offering hr {
+  width: 30%;
+  border-bottom: 3px solid rgb(69, 238, 69);
+}
+
+.services .offering a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
